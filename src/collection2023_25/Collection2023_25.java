@@ -14,7 +14,7 @@ public class Collection2023_25 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("sera que vai?");
+        System.out.println("sera que foi?");
     }
     
 }
