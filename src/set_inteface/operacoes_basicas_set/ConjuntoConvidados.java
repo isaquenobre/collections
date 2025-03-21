@@ -13,5 +13,10 @@ import java.util.Set;
 public class ConjuntoConvidados {
     
     private Set<Convidado> convidadoSet;
+
+    public ConjuntoConvidados(
+    ) {
+        this.convidadoSet = convidadoSet;
+    }
     
 }
