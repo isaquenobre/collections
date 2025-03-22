@@ -26,6 +26,45 @@ public class Convidado {
     }
 
     @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 97 * hash + this.codigoConvite;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Convidado other = (Convidado) obj;
+        return this.codigoConvite == other.codigoConvite;
+    }
+    
+    /*outra forma de fazer o equals() and hashCode()
+    informada na aula DIO - 85 - 
+    
+    @Override
+    public boolean equals(Object o){
+    if(this == o) return true;
+    if(!(o instanceof Convidado convidado)) return false;
+    return getCodigoConvite() == convidado.getCodigoConvite();
+    }
+    
+    
+    @Override
+    public int hashCode(){
+    return Objects.hash(getCodigoConvite());
+    }
+    */
+
+    @Override
     public String toString() {
         return "Convidado{" + "nome=" + nome + ", codigoConvite=" + codigoConvite + '}';
     }
