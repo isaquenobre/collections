@@ -29,6 +29,11 @@ public class Contato {
         return numero;
     }
 
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+    
+
     @Override
     public int hashCode() {
         int hash = 7;
