@@ -58,11 +58,20 @@ public class Contato {
     
     
 
-    @Override
+   /* @Override
     public String toString() {
         return "Contato{" + "nome=" + nome + ", numero=" + numero + '}';
+    }*/
+    
+    
+    /*@Override
+    public String toString() {
+        return nome +"," + numero ;
+    }*/
+    
+     @Override
+    public String toString() {
+        return "{" + nome +"," + numero + "}" ;
     }
-    
-    
     
 }
