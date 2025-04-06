@@ -11,6 +11,9 @@ import java.util.Map;
  *
  * @author Windows 10 PRO
  */
+
+
+//essa aula aqui são as operações basicas do MAP
 public class AgendaContatos {
     
     private Map<String, Integer> agendaContatoMap;
